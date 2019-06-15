@@ -3,15 +3,14 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>About Dotun</title>
+	<title>About</title>
 	<meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- stylesheets -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400%7CRoboto+Slab' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=1822856157">
-	<link rel="stylesheet" href="/assets/css/font-awesome.min.css?v=1822856157">
-	<link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=1822856157">
-	<link rel="stylesheet" type="text/css" href="/assets/css/hl-styles/monokai_sublime.css?v=1822856157">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 	<!-- only for demo -->
 	<!-- <link rel="stylesheet" type="text/css" href="/assets/demo-assets/css/colpick.css?v=1822856157"> -->
 	<script>
@@ -70,12 +69,20 @@ ghost.init({
 </script>
 </head>
 <body class="page-template page-about">
+	<header>
+    <div class="home">
+    <a href="#">Home</a>
+    <a href="#">Resume</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+    <a href="#">Blog</a>
+  </header>
 	<!-- start header -->
 <header class="main-header">
-	<div class="container">
+	<div class="image-container">
 		<div class="row">
 			<div class="col-sm-12" style="padding-bottom:35px">
-				<a href="https://www.dotunodumosu.com"><img src="/content/images/2018/12/Dotun-Odumosu-500x500.jpg" style="width:150px;height=150px;border-radius:50%"></a>
+				<a href="https://www.dotunodumosu.com"><img src="dotun.jpg" style="width:150px;height=150px;border-radius:50%"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -87,7 +94,7 @@ ghost.init({
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<a class="branding" style="text-align: center;padding: 25px;font-size: 1.5em; font-family: 'Roboto Slab', serif; color: #303030" href="https://www.dotunodumosu.com">Software Developer and Trainer</a>
+				<a class="branding" style="text-align: left;padding: 25px;font-size: 1.4em; font-family: 'Roboto Slab', serif; color: #303030" href="https://www.dotunodumosu.com">Software Developer and Trainer</a>
 			</div>
 		</div>
 	</div>
@@ -106,7 +113,6 @@ ghost.init({
 				</div>
 				<div class="collapse navbar-collapse" id="main-menu">
 	            <ul class="menu">
-	<li class="nav-home" role="presentation"><a href="https://www.dotunodumosu.com/">Home</a></li>
 	<li class="nav-about nav-current" role="presentation"><a href="https://www.dotunodumosu.com/about/">About</a></li>
 	
 </ul>
@@ -125,11 +131,16 @@ ghost.init({
 			<div class="col-md-8 main-content">
 				<!-- start post -->
 				<article class="post page">
-					<div class="post-head">
-						<h1 class="post-title h2">About Dotun</h1>
-					</div>
-					<div class="post-content">
-						<p>"I'm a professional Software Developer living in Lagos, Nigeria. I can bring your App/website into life. I also have in-depth knowledge of HTML5, CSS3 and JavaScript.</p><p>I hold a B.Sc in Computer Science. I have a strong focus in Computer Science and Engineering, including academic achievements, various internships and research projects.</p><p>I work as an Intern at one of the foremost IT Company in Nigeria (Veritas Technologies Limited) primarily as a Backend Developer. Sometimes, I lead the group of Interns at the Company.</p><p>I won a Google Africa Certification Scholarship supported by The Andela Learning Community (ALC). I hope to become an Android Developer in few months.</p><p>My dream is to be a Professor in Computer Science, and working tirelessly towards that goal, with renewed determination.</p><p>I am pro-active, confident and passionate about software engineering. After all, we are geeks working at the job we like, and we want to support other geeks pursuing the same goal.</p><p>My philosophy is making impossibilities possible.</p>"
+					<div id="main" class="post-head">
+						<h2>
+						<p>"I'm a professional Software Developer living in Lagos, Nigeria. I can bring your App/website into life. I also have in-depth knowledge of HTML5, CSS3 and JavaScript.</p>
+						<p>I hold a B.Sc in Computer Science. I have a strong focus in Computer Science and Engineering, including academic achievements, various internships and research projects.</p>
+						<p>I work as an Intern at one of the foremost IT Company in Nigeria (Veritas Technologies Limited) primarily as a Backend Developer. Sometimes, I lead the group of Interns at the Company.</p>
+						<p>I won a Google Africa Certification Scholarship supported by The Andela Learning Community (ALC). I hope to become an Android Developer in few months.</p>
+						<p>My dream is to be a Professor in Computer Science, and working tirelessly towards that goal, with renewed determination.</p>
+						<p>I am pro-active, confident and passionate about software engineering. After all, we are geeks working at the job we like, and we want to support other geeks pursuing the same goal.</p>
+						<p>My philosophy is making impossibilities possible."</p>
+					</h2>
 
 					</div>
 				</article>
@@ -140,15 +151,12 @@ ghost.init({
 <div class="col-md-4 sidebar">
 	<!-- start widget -->
 <div class="widget">
-	<h2 class="title">Follow</h2>
+	<h2 class="title">Connect</h2>
 	<div class="split-lists">
 
 				<div class="split-list">
 
-					<h3>Connect</h3>
-
 					<ul>
-						<li><a href="https://dotunodumosu.com/blog"  target="_blank">Blog</a></li>		
 						<li><a href="mailto:dotunodumosu@gmail.com">Email</a></li>
 						<li><a href="https://github.com/dotunodumosu"  target="_blank">Github</a></li>
 					</ul>
@@ -163,23 +171,32 @@ ghost.init({
 						<li><a href="https://twitter.com/@dotunodumosu"  target="_blank">Twitter</a></li>
 						<li><a href="https://www.instagram.com/dotunodumosu/"  target="_blank">Instagram</a></li>
 						<li><a href="https://www.facebook.com/dotunodumosu"  target="_blank">Facebook</a></li>
-					</ul>
-
-				</div>
-
-				<div class="split-list">
-
-					<h3>Other Links</h3>
-
-					<ul>
 						<li><a href="https://linkedin.com/in/dotunodumosu/" target="_blank">LinkedIn</a></li>
-						<li><a href="pdf/Dotun-Odumosu-CV.pdf" target="_blank">My CV</a></li>
-						<li> &nbsp;</li>
 					</ul>
 
 				</div>
+				<div class="actions">
+    <a href="#">PROJECTS</a>
+  </div>
 
-			</div>
+  <div id="gameboard">
+    <div class="card">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+    </div>
+
+    <div class="card">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+    </div>
+
+    <div class="card">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+    </div>
+
+    <div class="card">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+    </div>
+
+</div>
 	<!-- start widget -->
 <div class="widget">
 	<h4 class="title">Twitter</h4>
